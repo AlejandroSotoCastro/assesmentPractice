@@ -1,14 +1,14 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
+import ContactInfo from "../components/ContactInfo";
 
 export default function HomePage() {
   return (
     <div>
       <h1>Welcome to AMS Gps</h1>
-      <p>We are: ¿?</p>
-      <p>To make an appointment</p>
-      <p>call: 020 555 5555</p>
+
+      <ContactInfo />
       <div className="Home-Buttons">
         <div>
           <Link to="/onDuty">
