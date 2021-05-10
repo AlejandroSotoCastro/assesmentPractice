@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import ContactInfo from "../components/ContactInfo";
 
 export default function HomePage() {
+  console.log("a ver");
+
   return (
     <div>
       <h1>Welcome to AMS Gps</h1>
