@@ -38,7 +38,6 @@ export default function Details() {
     }
     fetchPatients();
     fetchDoctors();
-    console.log(doctorStatus);
   }, []);
 
   if (!doctorData || !patientData) {
@@ -47,7 +46,6 @@ export default function Details() {
     const patients_filtered = filter_patients();
 
     const patients_sorted = [...patients_filtered].sort(compare_name);
-    console.log(patients_sorted);
 
     return (
       <div>

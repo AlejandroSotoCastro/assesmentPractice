@@ -1,0 +1,1 @@
+I think this assesment has helped me ground my knowledeg of react, specially fetching data. Also the practice with the server was really nice because I had forgoten almost all of it. I think I've done a good job and I'm happy about it
