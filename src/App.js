@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import OnDuty from "./pages/OnDuty";
 import Signup from "./pages/Signup";
 import Details from "./pages/Details";
+import PatientDetails from "./pages/PatientDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route path="/onDuty" component={OnDuty} />
         <Route path="/signup" component={Signup} />
+        <Route path="/details/:patientId" component={PatientDetails} />
         <Route path="/details" component={Details} />
         <Route path="/" component={HomePage} />
       </Switch>

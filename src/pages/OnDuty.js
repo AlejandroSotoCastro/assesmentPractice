@@ -22,31 +22,31 @@ export default function OnDuty() {
 
   if (!doctorData) {
     return <div>Loading</div>;
+  } else {
+    return (
+      <div>
+        <h1>Who is on Duty ?</h1>
+
+        <table className="Table">
+          <thead>
+            <tr>
+              <th>Doctor</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            {doctorData.map((doctor) => {
+              return (
+                <tr key={doctor.id}>
+                  <td>{doctor.doctor}</td>
+                  <td>{doctor.onDuty ? "Avaliable" : "Not Avaliable"}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+        <ContactInfo />
+      </div>
+    );
   }
-
-  return (
-    <div>
-      <h1>Who is on Duty ?</h1>
-
-      <table className="Table">
-        <thead>
-          <tr>
-            <th>Doctor</th>
-            <th>Availability</th>
-          </tr>
-        </thead>
-        <tbody>
-          {doctorData.map((doctor) => {
-            return (
-              <tr key={doctor.id}>
-                <td>{doctor.doctor}</td>
-                <td>{doctor.onDuty ? "Avaliable" : "Not Avaliable"}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      <ContactInfo />
-    </div>
-  );
 }
