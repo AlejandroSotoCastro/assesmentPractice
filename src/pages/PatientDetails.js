@@ -11,7 +11,7 @@ export default function PatientDetails() {
   useEffect(() => {
     async function fetchPatients() {
       const response = await axios.get(
-        `https://my-json-server.typicode.com/Codaisseur/patient-doctor-data/patients/${route_parameters.patientId}`
+        `http://localhost:4000/patients/${route_parameters.patientId}`
       );
 
       set_patientData(response.data);

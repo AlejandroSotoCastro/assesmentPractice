@@ -1,4 +1,5 @@
 import React from "react";
+import "./OnDuty.css";
 import ContactInfo from "../components/ContactInfo";
 
 import { useState, useEffect } from "react";
